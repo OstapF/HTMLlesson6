@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        body{
+            margin:0;
+        }
+        header{
+            background-color: purple;
+            height: 30vh;
+            width:100vw;
+        }
+        main {
+        height: 70vh;
+            width: 100vw;
+            display: flex;
+        }
+        article{
+            background-color: pink;
+            height: 70vh;
+            width: 20vw;
+        }
+        section{
+            background-color:darkgrey;
+            height: 70vh;
+            width: 80vw;
+        }
+        @media screen and (min-width: 300px) and (max-width: 500px){
+            main{
+                flex-direction: column;
+            }
+            article{
+                background-color: pink;
+                height: 20vh;
+                width: 100vw;
+            }
+            section{
+                background-color:darkgrey;
+                height: 50vh;
+                width: 100vw;
+            }
+
+        }
+    </style>
 </head>
 <body>
-$END$
+<header></header>
+<main>
+    <section></section>
+    <article></article>
+</main>
 </body>
 </html>

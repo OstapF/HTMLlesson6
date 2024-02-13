@@ -1,10 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <style>
+    body{
+      margin:0;
+    }
+    header{
+      background-color: purple;
+      height: 30vh;
+      width:100vw;
+    }
+    main {
+      height: 70vh;
+      width: 100vw;
+      display: flex;
+        flex-direction: column;
+    }
+    .four{
+        background-color: aqua;
+        height: 35vh;
+        width: 80vw;
+    }
+    footer{
+      background-color: pink;
+      height: 70vh;
+      width: 30vw;
+    }
+    .three{
+      width: 80vw;
+      height: 35vh;
+        display: flex;
+    }
+    section{
+      background-color: #574e88;
+      height: 35vh;
+      width: 33%;
+    }
+    article{
+      background-color: #5f9b5c;
+      height: 35vh;
+      width: 33%;
+    }
+    form{
+      background-color: #b93333;
+      height: 35vh;
+      width: 34%;
+    }
+    .five{
+        display: flex;
+    }
+
+    @media screen and (min-width: 300px) and (max-width: 500px){
+      main{
+        flex-direction: column;
+          height: 60vh;
+      }
+        .five{
+            flex-direction: column;
+        }
+        .four{
+            width: 100vw;
+            height: 50vh;
+        }
+        .three{
+            width: 100vw;
+            height: 10vh;
+        }
+        header{
+            height: 20vh;
+        }
+        footer{
+            height: 20vh;
+            width: 100vw;
+        }
+
+      article{
+        height: 10vh;
+        width: 33vw;
+      }
+        form{
+            height: 10vh;
+            width: 33vw;
+        }
+      section{
+        height: 10vh;
+        width: 34vw;
+      }
+
+    }
+  </style>
 </head>
 <body>
-$END$
+<header></header>
+<div class="five">
+<main>
+  <div class="four"></div>
+  <div class="three">
+  <section></section>
+  <article></article>
+  <form></form>
+  </div>
+</main>
+<footer></footer>
+</div>
 </body>
 </html>
